@@ -3,32 +3,23 @@
   <QuillEditor v-model:content="content" :modules="modules" toolbar="full" />
 </template>
 
-<script lang="ts">
-import { ref, defineComponent } from 'vue'
+<script setup lang="ts">
+import { ref } from 'vue'
 import { QuillEditor, Delta } from 'anburocky3/vue-quill2'
 import BlotFormatter from 'quill-blot-formatter'
 
-export default defineComponent({
-  components: {
-    QuillEditor,
+const modules = {
+  name: 'blotFormatter',
+  module: BlotFormatter,
+  options: {
+    /* options */
   },
-  setup: () => {
-    const modules = {
-      name: 'blotFormatter',
-      module: BlotFormatter,
-      options: {
-        /* options */
-      },
-    }
-    const content = ref<Delta>(
-      new Delta([
-        { insert: 'Gandalf', attributes: { bold: true } },
-        { insert: ' the ' },
-        { insert: 'Grey', attributes: { color: '#ccc' } },
-      ])
-    )
-
-    return { content, modules }
-  },
-})
+}
+const content = ref<Delta>(
+  new Delta([
+    { insert: 'Gandalf', attributes: { bold: true } },
+    { insert: ' the ' },
+    { insert: 'Grey', attributes: { color: '#ccc' } },
+  ])
+)
 </script>

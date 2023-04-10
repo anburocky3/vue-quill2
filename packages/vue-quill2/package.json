@@ -1,5 +1,5 @@
 {
-  "name": "anburocky3/vue-quill2",
+  "name": "vue-quill2",
   "version": "0.0.1-development",
   "description": "Vue 3 rich text editor based on Quill.",
   "main": "index.js",
