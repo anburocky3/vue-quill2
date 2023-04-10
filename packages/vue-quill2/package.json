@@ -1,0 +1,51 @@
+{
+  "name": "anburocky3/vue-quill2",
+  "version": "0.0.1-development",
+  "description": "Vue 3 rich text editor based on Quill.",
+  "main": "index.js",
+  "module": "dist/vue-quill2.esm-bundler.js",
+  "unpkg": "dist/vue-quill2.global.prod.js",
+  "jsdelivr": "dist/vue-quill2.global.prod.js",
+  "types": "dist/vue-quill2.d.ts",
+  "files": [
+    "index.js",
+    "dist"
+  ],
+  "buildOptions": {
+    "name": "VueQuill2",
+    "formats": [
+      "esm-bundler",
+      "esm-browser",
+      "cjs",
+      "global"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anburocky3/vue-quill2.git"
+  },
+  "keywords": [
+    "vue-quill2",
+    "vue 3 quill component",
+    "vue 3 quill editor",
+    "vue 3 text editor",
+    "vue 3 rich text editor",
+    "vue 3 web editor",
+    "vue 3 editor",
+    "vue 3 wysiwyg",
+    "vue 3 wysiwyg editor"
+  ],
+  "author": "Anbuselvan Rocky",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anburocky3/vue-quill2/issues"
+  },
+  "homepage": "https://anburocky3.github.io/vue-quill2/",
+  "dependencies": {
+    "quill": "^2.0.0-dev.4",
+    "quill-delta": "^4.2.2"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.41"
+  }
+}
